@@ -43,7 +43,7 @@ validoiKaikki();
 function validoiKayttajaId() {
     validitKentat[0] = true;
     const virhe = document.getElementById("kayttajaIdVirhe");
-    if (kayttajaId.value.length <= 6) {
+    if (kayttajaId.value.length < 6) {
         virhe.textContent = "Käyttäjä ID tulee olla 6 merkkiä tai yli pitkä";
         virhe.style.display = "block";
         validitKentat[0] = false;
