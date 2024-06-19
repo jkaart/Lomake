@@ -63,6 +63,7 @@ textarea {
         width: 50ch;
         height: 24ch;
     }
+
     #rekLomake table tr td:first-child {
         text-align: end;
     }
@@ -105,7 +106,9 @@ textarea {
         text-align: start;
         display: block;
     }
-    
+    .sisalto {
+        padding-bottom: 2vh;
+    }
     .keskitys {
         margin: auto;
     }
