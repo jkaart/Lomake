@@ -1,0 +1,112 @@
+body {
+    background-color: ghostwhite;
+}
+
+textarea {
+    display: block;
+}
+
+#infoBox {
+    display: none;
+    border: 1px solid black;
+    margin-bottom: 2vh;
+}
+
+#pwVirheDiv {
+    display: block;
+}
+
+#lahetaBtn {
+    display: block;
+    margin: 5vh auto auto auto;
+}
+
+#reklomake table tr:last-child td:last-child {
+    display: flex;
+    margin: auto;
+}
+
+#rekLomake table tr:last-child td:first-child {
+    vertical-align: text-top;
+}
+
+.keskitys {
+    width: fit-content;
+}
+
+.sisalto {
+    border: 1px solid black;
+    border-radius: 0.2vi;
+    background-color: azure;
+}
+
+.ohje {
+    font-weight: bold;
+}
+
+.virhe, .virhe p {
+    color: red;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.virhe {
+    margin: 0 0 0 1px;
+    padding: 0 0 0 1vw;
+    
+    border: 1px solid red;
+    background-color: beige;
+}
+
+@media only screen and (min-width: 600px) {
+    textarea {
+        width: 50ch;
+        height: 24ch;
+    }
+    #rekLomake table tr td:first-child {
+        text-align: end;
+    }
+
+    #nimi, #osoite, #email {
+        width: 48ch;
+    }
+    
+    #postinro {
+        width: 24ch;
+    }
+
+    #kayttajaId, #pw {
+        width: 16ch;
+    }
+    
+    .keskitys {
+        margin: auto;
+    }
+
+    .virhe {
+        width: 370px;
+    }
+    .sisalto {
+        padding: 0 5vw 5vh 5vw;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+
+    textarea {
+        width: 35ch;
+        height: 12ch;
+    }
+
+    #rekLomake table tr td {
+        text-align: start;
+        display: block;
+    }
+    
+    .keskitys {
+        margin: auto;
+    }
+}

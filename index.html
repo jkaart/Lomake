@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Rekisteröitymislomake</title>
+</head>
+
+<body>
+    <div id="infoBox">
+        <p id="infoViesti"></p>
+    </div>
+    <div class="keskitys">
+        <div class="sisalto">
+            <h1>Rekisteröitymislomake</h1>
+            <p class="ohje">Siiry kentästä toiseen tab-näppäimellä.</p>
+            <div class="lomake">
+                <form id="rekLomake" action="#">
+                    <table>
+                        <tr>
+                            <td><label for="kayttajaId">Käyttäjä ID:</label></td>
+                            <td><input id="kayttajaId"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="kayttajaIdVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pw">Salasana:</label></td>
+                            <td><input type="password" id="pw"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe">
+                                <div id="pwVirheDiv">
+                                    <p id="pwVirhe0"></p>
+                                    <p id="pwVirhe1"></p>
+                                    <p id="pwVirhe2"></p>
+                                    <p id="pwVirhe3"></p>
+                                    <p id="pwVirhe4"></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Nimi:</label></td>
+                            <td><input id="nimi"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="nimiVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Osoite:</label></td>
+                            <td><input id="osoite"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="osoiteVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Maa:</label></td>
+                            <td><select id="maa">
+                                    <option>(Valitse maa)</option>
+                                    <option value="suomi">Suomi</option>
+                                    <option value="ruotsi">Ruotsi</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="maaVirhe"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Postinumero:</label></td>
+                            <td><input id="postinro"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="postinroVirhe"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Sähköpostiosite:</label></td>
+                            <td><input id="email"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="emailVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Sukupuoli:</label></td>
+                            <td><label for="mies"><input id="mies" type="radio" name="sukupuoli"
+                                        value="mies">Mies</label>
+                                <label for="nainen"><input id="nainen" type="radio" name="sukupuoli"
+                                        value="nainen">Nainen</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="sukupuoliVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Kieli:</label></td>
+                            <td><label for="suomiKieli">
+                                    <input id="suomiKieli" type="checkbox" name="kieli" value="suomi">Suomi</label>
+                                <label for="muuKieli">
+                                    <input id="muuKieli" type="checkbox" name="kieli" value="muu">Muu kuin suomi</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="virhe" id="kieliVirhe"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Lisätietoja:</label></td>
+                            <td><textarea id="ltietoja"></textarea></td>
+                        </tr>
+                    </table>
+                    <input id="lahetaBtn" value="Lähetä" type="button">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
